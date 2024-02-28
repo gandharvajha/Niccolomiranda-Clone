@@ -49,7 +49,8 @@ html,body{
     text-align: right;
 }
 #elems{
-    height:430px;
+    /* height:430px; */
+    height:auto;
     /* background-color:red; */
     display:flex;
     align-items: center;
@@ -146,7 +147,7 @@ html,body{
     font-size:50px;
     font-weight:100;
     color:#5f5959;
-    margin:20px 0px;
+    margin:10px 0px;
 }
 #elem2 h6{
     font-family:domain;
@@ -163,6 +164,7 @@ html,body{
     line-height: 200px;
     width:94%;
     margin-left:2%;
+    margin-top:20px;
 }
 #page2{
     height:150vh;
@@ -216,13 +218,14 @@ html,body{
     font-size:50px;
     letter-spacing:-1px;
     font-weight: 100px;
+    margin-top:20px;
 }
 #page3{
-   padding-bottom:100px;
+   /* padding-bottom:100px; */
     position:relative;
 }
 #page3 h1{
-    font-size:200px;
+    font-size:300px;
     font-family: canopee;
     background-color: #1C1C1A;
     color:#C4BCB3;
@@ -230,8 +233,8 @@ html,body{
     font-weight:100;
     letter-spacing: -10px;
     margin-left:2%;
-    padding:0 20px;
-    line-height: 200px;
+    padding:20px 20px;
+    line-height: 180px;
 }
 #page3 img{
     position: absolute;
@@ -279,14 +282,76 @@ html,body{
         display:flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: nowrap;
+        overflow:hidden;
 }
 #page-anda h1{
     font-size:50px;
     font-family: canopee;
     width:100%;
     height:100%;
-    background-color:red;    
+    /* background-color:red;  */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform:translateX(-26%);  
+    transition:all ease 0.6s; 
+   
 }
 #page-anda img{
     height:50px;
+    transform:translateX(-120%);
+    transition:all ease 0.6s; 
+}
+#page-anda:hover img{
+    transform:translateX(70%);
+}
+#page-anda:hover h1{
+    transform:translateX(140%);
+}
+#page5{
+   padding:25px 0px;
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid #222;
+    border-bottom:1px solid #222;
+}
+#page5::-webkit-scrollbar{
+    display: none;
+}
+#page5 h1{
+    font-size:80px;
+    font-family: domain;
+    font-weight:100;
+    display:inline-block;
+    margin-right:20px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#page5 h1 span{
+    font-family: canopee;
+    background-color: #2f2f2f;
+    color: #C4BCB3;
+    padding:0 12px; 
+}
+#page6{
+    padding:30px 0px;
+    width:100%;
+    height:100px;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 24px));
+
+    }
+}
+#page5:hover h1{
+    animation-play-state: paused;
 }
