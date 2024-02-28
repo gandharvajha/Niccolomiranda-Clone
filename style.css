@@ -245,9 +245,10 @@ html,body{
     width:100%;
     display:flex;
     align-items:center;
+    justify-content: space-around;
 }
 #page4-left{
-    width:60%;
+    width:65%;
     height:100%;
     padding:40px 30px;
 }
@@ -257,7 +258,7 @@ html,body{
     object-fit: cover;
 }
 #page4-right{
-    width:40%;
+    width:35%;
     height:100%;
     padding:40px 30px;
 }
@@ -266,6 +267,26 @@ html,body{
     font-family: domain;
     font-weight: 100;
     color: #2f2f2f;
-    margin-bottom:50px;
+    margin-bottom:80px;
     line-height: 30px;
+}
+#page4-right #page-anda{
+    height:150px;
+    width:100%;
+    border-radius:50%;
+    background-color:#C9C0B6;
+    border:1px solid #222;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+}
+#page-anda h1{
+    font-size:50px;
+    font-family: canopee;
+    width:100%;
+    height:100%;
+    background-color:red;    
+}
+#page-anda img{
+    height:50px;
 }
