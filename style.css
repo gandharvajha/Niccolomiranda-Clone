@@ -404,7 +404,7 @@ html,body{
     }
     #page-anda h1 {
         font-size:35px;
-        transform: translateX(-86%);
+        transform: translateX(-34%);
   }
   #page4-right p {
     margin-bottom: 30px;
@@ -412,13 +412,25 @@ html,body{
   #page4-right #page-anda {
     height: 100px;
   }
+  #page-anda:hover img {
+    transform: translateX(54%);
+}
+#page-anda img {
+    height: 30px;
+}
+#elems{
+    padding: 40px 25px;
+}
 }
 @media only screen and (max-width: 576px) {
-    #elems,#page2{
+    #elems,#page2,#page4{
       flex-direction: column;
     }
-    #elem1,#elem2,#elem3,#page2-right{
+    #elem1,#elem2,#elem3,#page2-right,#page4-left,#page4-right{
         width:100%;
+    }
+    #elems{
+        padding: 40px 25px;
     }
     #elem2 h2 {
         font-size: 30px;
@@ -446,7 +458,86 @@ html,body{
     font-size: 70px;
 }
 #page2-right {
-    margin-top:50px;
+    margin-top:65px;
+    padding:0px;
 }
-    
+#page2-right h2 {
+    font-size: 25px;
+}
+#page3 {
+    margin-top: 350px;
+}
+#page3 h1{
+    font-size:85px;
+    line-height: 80px;
+}
+#page4{
+    height:auto;
+}
+#page4-right{
+    padding: 0px 30px;
+}
+#page4-right #page-anda{
+    height: 125px;
+}
+#page-anda h1{
+    font-size: 25px;
+    transform: translateX(-36%);
+}
+#page-anda img {
+    height: 40px;
+}
+#page-anda:hover img {
+    transform: translateX(68%);
+}
+#page4-right p {
+    margin-bottom: 50px;
+} 
+#page5 h1 {
+    font-size: 40px;
+}
+#page5{
+    margin-top:20px;
+}
+  }
+  @media only screen and (max-width: 320px) {
+    #page2-left h2 {
+        font-size: 60px;
+    }
+    #page2-left h2 span {
+        font-size: 80px;
+    }
+    #page2-left img{
+        height:auto;
+        margin-top:25px;
+    }
+    #page2-left p {
+        font-size: 22px;
+    }
+    #page2-right {
+        margin-top: 40px;
+    }
+    #page2-right h2 {
+        font-size: 21px;
+    }
+    #page3 {
+        margin-top: 250px;
+    }
+    #page3 h1 {
+        font-size: 50px;
+        line-height: 46px;
+        margin-left: 8%;
+        letter-spacing: -3px;
+    }
+    #page3 img {
+        position: absolute;
+        right: 10%;
+    }
+    #page-anda h1 {
+        transform: translateX(-50%);
+    }
+    #page-anda img {
+        height: 35px;
+    }
+
   }
