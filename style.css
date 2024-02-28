@@ -343,6 +343,17 @@ html,body{
     width:100%;
     height:100px;
 }
+#page2-left p::first-letter {
+    /* font-family: "Canopee", sans-serif; */
+    font-feature-settings: "ss03";
+    float: left;
+    font-size: 7vw;
+    line-height: 5vw;
+    margin: .7vw 1vw 1vw 0vw;
+    /* background-color: #1D1D1B; */
+    /* color: #CDC6BE; */
+    padding: .75vw .4vw .5vw .5vw;
+}
 @keyframes scroll {
     0%{
         transform: translateX(0);
@@ -355,3 +366,87 @@ html,body{
 #page5:hover h1{
     animation-play-state: paused;
 }
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    #elem1 p,#elem3 p ,#page2-left p,#page4-right p{
+        font-size: 18px;
+    }
+    #elem2 h2 {
+        font-size: 22px;
+    }
+    #elem2 h3 {
+        font-size: 20px;
+    }
+    #page2 {
+        height:125vh;
+    }
+    #page2-left h2 {
+        font-size: 54px;
+        line-height: 52px;
+    }
+    #page2-left h2 span {
+        font-size: 75px;
+    }
+    #page2-left img {
+        height:auto;
+        margin-top:20px;
+    }
+    #page2-right img,#page4-left img{
+        height:auto;
+    }
+    #page2-right h2{
+        font-size: 26px;
+    }
+    #page3 h1{
+        font-size: 170px;
+    }
+    #page4 {
+        height: 140vh;
+    }
+    #page-anda h1 {
+        font-size:35px;
+        transform: translateX(-86%);
+  }
+  #page4-right p {
+    margin-bottom: 30px;
+  }
+  #page4-right #page-anda {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+    #elems,#page2{
+      flex-direction: column;
+    }
+    #elem1,#elem2,#elem3,#page2-right{
+        width:100%;
+    }
+    #elem2 h2 {
+        font-size: 30px;
+    }
+    #elem2 h3 {
+        font-size: 25px;
+    }
+    #elem2,#elem3{
+        margin-top: 20px;
+    }
+    
+    #page1 h1 {
+        font-size: 50px;
+        line-height: 100px;
+}
+#page2-left{
+    width: 100%;
+    padding-right: 0px;
+    border-right:none;
+}
+#page2{
+    padding: 45px 28px;
+}
+#page2-left h2 {
+    font-size: 70px;
+}
+#page2-right {
+    margin-top:50px;
+}
+    
+  }
