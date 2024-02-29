@@ -20,7 +20,7 @@ html,body{
     overflow-x:hidden;
 }
 #page1{
-    min-height:110vh;
+    /* min-height:110vh; */
     width:100vw;
     background-color:#C1B9B0;
     position:relative;
@@ -244,7 +244,7 @@ html,body{
 
 }
 #page4{
-    height:100vh;
+    /* height:100vh; */
     width:100%;
     display:flex;
     align-items:center;
@@ -366,6 +366,62 @@ html,body{
 #page5:hover h1{
     animation-play-state: paused;
 }
+#page4inside{
+    display:flex;
+    flex-direction:row;
+    margin:20px 0px 40px 0px;
+}
+.upcoming, .unexpected{
+    width:50%;
+}
+.upcoming h1{
+    font-size:50px;
+    font-family:domain;
+}
+.upcoming  h4{
+    font-size:40px;
+    font-family: conopee;
+    font-weight:100;
+    margin-top:15px;
+}
+.upcoming h5{
+    font-size:20px;
+    font-family:domain;
+    font-weight:100;
+    margin-top:15px;
+}
+.upcoming{
+    border-right:1px solid #a5a5a5;
+    /* padding:20px 0px; */
+    margin:0px 20px 0px 0px;
+}
+.unexpected{
+    margin:0px 20px 0px 0px;
+}
+.unexpected h1{
+    font-size:30px;
+    font-family: conopee;
+    font-weight: 100;
+    margin-top:15px;
+}
+.unexpected p{
+    font-size:18px;
+    font-family:domain;
+    margin-top:15px;
+}
+.unexpected div{
+    overflow:hidden;
+    height:60%;
+  
+}
+.unexpected div img{
+    transition: all ease 0.5s;
+    /* object-fit: cover; */
+    height:100%;
+}
+.unexpected div:hover img{
+    scale:1.1;
+}
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     #elem1 p,#elem3 p ,#page2-left p,#page4-right p{
         font-size: 18px;
@@ -400,7 +456,8 @@ html,body{
         font-size: 170px;
     }
     #page4 {
-        height: 140vh;
+        height: auto;
+        align-items: start;
     }
     #page-anda h1 {
         font-size:35px;
@@ -420,6 +477,18 @@ html,body{
 }
 #elems{
     padding: 40px 25px;
+}
+.unexpected div{
+    height:auto;
+}
+.upcoming h1 {
+    font-size: 30px;
+}
+.upcoming h4 {
+    font-size: 20px;
+}
+.upcoming h5 {
+    font-size: 18px;
 }
 }
 @media only screen and (max-width: 576px) {
@@ -497,6 +566,16 @@ html,body{
     font-size: 40px;
 }
 #page5{
+    margin-top:20px;
+}
+#page4inside{
+    flex-direction:column;
+}
+.upcoming,.unexpected {
+    width:100%;
+    border:none;
+}
+.unexpected{
     margin-top:20px;
 }
   }
