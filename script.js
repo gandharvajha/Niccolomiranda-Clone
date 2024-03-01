@@ -31,10 +31,11 @@ navtogleopen.addEventListener("click", function() {
         navbar.style.display = "block"; 
         navbar.style.backgroundColor = "rgb(0 0 0 / 85%)"; 
         navbar.style.marginTop = "-109px"; 
-        navbar.style.padding= " 200px"; 
+        navbar.style.paddingTop= " 200px"; 
+        navbar.style.paddingBottom= " 200px"; 
         navbar.style.color= "#ffffff";
         navbar.style.textAlign= "center"; 
-        navbar.style.fontSize= "3.5rem"; 
+        navbar.style.fontSize= "40px"; 
        
         navtogleclose.style.fontSize = "2.5rem";
         // navbar.classList.add('bar');
